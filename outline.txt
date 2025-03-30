@@ -1,0 +1,19 @@
+Worldline Front-End Test 
+Create a simple front-end application for a Post board that allows a user to create and manage different lists of Posts. You will be consuming and using the external API https://jsonplaceholder.typicode.com/ for this. 
+The application should implement the following user stories:
+	1.	As a user, I can view all posts with pagination.
+	2.	As a user, I can view a specific post and its related comments.
+	3.	As a user, I can create a post.
+	4.	As a user, I can update an existing post.
+	5.	As a user, I can delete a post.
+	6.	As a user, I can view all users and their respective posts. 
+Notice that the API doesn’t persist create, update and delete methods. Keep that in mind when completing the tasks. 
+The user stories are in priority order. Please complete as many as you can, but don’t spend more than 3 hours on the task. This test will be used for further discussion during the technical interview, so it’s not graded based on completion.
+Please write the application with React and Typescript. You are free to use external libraries as well, but be ready to motivate why you choose them.
+We will be reviewing how you structure the new applications, which processes, practices and standards you put in place. Some of the things we may look for are: 
+	•	Code quality and Organization: is the code well-structured and easy to read?
+	•	State Management Approach: Is the state/props handling effective?
+	•	Component Design: How are the components structured and designed?
+	•	Technology Stack: which libraries where used (if any) and why?
+	•	User Experience: Is the application user-friendly and intuitive?
+When you are finished with everything, please push the code to a public git repository. Include a README file with directions on how to install and start the application. Then send us the link. Thank you and we do hope you will have fun doing this assignment! 

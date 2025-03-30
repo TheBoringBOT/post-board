@@ -1,0 +1,47 @@
+.container {
+  margin-top: 68px;
+  width: var(--container-width);
+}
+
+.title {
+  color: var(--brand);
+  font-weight: 600;
+  font-size: 16px;
+  text-align: left;
+  padding: 8px 16px;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 16px;
+  margin: 0 auto;
+  border-bottom: 1px solid var(--borderColor);
+  text-align: left;
+}
+
+.name {
+  font-weight: 400;
+  color: var(--primaryText);
+  font-size: 16px;
+}
+
+.email {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--secondaryText);
+}
+
+.body {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--secondaryText);
+  max-width: 600px;
+}

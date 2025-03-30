@@ -1,0 +1,24 @@
+:root {
+  --primaryText: #283841;
+  --secondaryText: #404d55;
+  --brand: #244582;
+  --brand-ghost: #e3390014;
+  --primaryBackground: #ffffff;
+  --secondaryBackground: #e3e3e3;
+  --headerHeight: 64px;
+  --footerHeight: 64px;
+  --borderColor: #dedede;
+  --containerWidth: 1280px;
+  --containerPadding: 34px;
+  --containerPaddingMobile: 16px;
+
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--primaryText);
+  background: var(--primaryBackground);
+}

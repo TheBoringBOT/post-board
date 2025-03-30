@@ -1,0 +1,14 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  row-gap: 8px;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+}

@@ -1,0 +1,52 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  width: inherit;
+  min-height: 100px;
+  row-gap: 8px;
+  padding: 16px;
+
+  border-bottom: 1px solid var(--borderColor);
+
+  transition: all 0.1s ease;
+  &:hover {
+    border-color: var(--brand);
+    cursor: pointer;
+  }
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.id {
+  font-size: 18px;
+  color: var(--secondaryText);
+  font-weight: 600;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--brand);
+  margin: 0;
+  text-transform: capitalize;
+}
+
+.body {
+  font-size: 14px;
+  color: var(--secondaryText);
+  margin: 0;
+  max-width: 600px;
+
+  /* just because the lower case was annoying ;) */
+  &:first-letter {
+    text-transform: capitalize;
+  }
+}

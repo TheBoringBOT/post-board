@@ -1,0 +1,28 @@
+.controls {
+  display: flex;
+  gap: 14px;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  padding: 6px;
+  color: var(--secondaryText);
+  cursor: pointer;
+  transition: color 0.2s;
+  font-size: 14px;
+}
+
+.button:hover {
+  color: var(--brand);
+}
+
+.buttonText {
+  margin-left: 4px;
+}
+
+.button:hover .buttonText {
+  color: var(--brand);
+}

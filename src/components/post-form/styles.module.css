@@ -1,0 +1,42 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 5px;
+  text-align: left;
+  font-weight: 600;
+}
+
+.input {
+  width: 100%;
+  padding: 8px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.textarea {
+  width: 100%;
+  min-height: 200px;
+  padding: 8px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.submitButton {
+  align-self: flex-start;
+  padding: 8px 16px;
+  border-radius: 20px;
+  background-color: var(--brand);
+  color: var(--primaryBackground);
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}

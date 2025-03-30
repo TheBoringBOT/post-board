@@ -1,0 +1,11 @@
+.container {
+  margin: calc(var(--headerHeight) + 32px) auto 0;
+  min-height: calc(100vh - var(--headerHeight));
+  max-width: var(--containerWidth);
+  text-align: center;
+  padding: 0 var(--containerPadding);
+
+  @media (max-width: 768px) {
+    padding: 0 var(--containerPaddingMobile);
+  }
+}
