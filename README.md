@@ -48,3 +48,7 @@ npm run build
 
 - The `.env` file is included in this repository for your testing convenience since it only contains the public JSONPlaceholder API URL.
 - This project uses [JSONPlaceholder](https://jsonplaceholder.typicode.com/) as a fake REST API for development and testing.
+
+## Data Persistence
+
+Posts are stored in React Context. Any modifications or new posts will be lost when the page is reloaded.
