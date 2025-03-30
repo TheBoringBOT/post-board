@@ -1,6 +1,7 @@
-import { createContext, useState, ReactNode, useEffect, useCallback } from 'react';
+import { createContext, useState, ReactNode, useEffect, useCallback, useContext } from 'react';
 import { UserProps } from '../api/types';
 import { fetchUsers, fetchUser, fetchUserPosts } from '../api';
+import { PostsContext } from './PostsContext';
 
 export interface UsersContextType {
   users: UserProps[];
@@ -17,6 +18,7 @@ export const UsersProvider = ({ children }: { children: ReactNode }) => {
   const [users, setUsers] = useState<UserProps[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const postsContext = useContext(PostsContext);
 
   const loadUsers = useCallback(async () => {
     try {
@@ -48,6 +50,13 @@ export const UsersProvider = ({ children }: { children: ReactNode }) => {
   const getUserPosts = async (userId: number) => {
     try {
       const posts = await fetchUserPosts(userId);
+
+      // Filter out any posts that have been deleted in the PostsContext - might be a litttle ugly 🥶 but ok for a test
+      if (postsContext) {
+        const availablePostIds = new Set(postsContext.posts.map((post) => post.id));
+        return posts.filter((post) => availablePostIds.has(post.id));
+      }
+
       return posts;
     } catch (error) {
       console.error('Error fetching user posts:', error);
