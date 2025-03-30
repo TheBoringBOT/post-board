@@ -1,3 +1,5 @@
+![Screenshot](./screenshot.png)
+
 # Post Board
 
 A React + TypeScript + Vite application for displaying and managing posts.
